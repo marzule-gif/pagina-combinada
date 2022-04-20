@@ -47,8 +47,6 @@ app.get('/data',(req,res)=>{
    
      res.status(200).json({
       data: message
-      
-      
     });
     
   });

@@ -28,7 +28,11 @@ var greenIcon = new L.Icon({
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
-  });
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+    getData()
+})
 
 document.getElementById("start").addEventListener("change", function() {
     var inicio = this.value;
