@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiLoc</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   
+    <link rel="stylesheet" href = "/css/main.css">
+    <link rel="stylesheet" href = "/css/byplace.css">
+
+</head>
+<body>
+    <h1 id="title">Ubicación GPS</h1>
+    <section id="datos">
+        <section id="fechas">
+
+            <div>
+                <label for="start">Inicio</label>
+                <input id="start" type="datetime-local" placeholder="Select DateTime">
+            </div>
+            
+            <div>
+                <label for="stop">Final </label>
+                <input id="stop" type="datetime-local" placeholder="Select DateTime">
+            </div>
+            <div>
+                <input id="button" type="button" value="Trazar recorrido histórico del vehículo">
+            </div>
+
+        </section>
+        <section class="grid">
+        
+            <div>
+                Latitud:
+            </div>
+            <div id="lat">
+                
+            </div>
+            <div>
+                Longitud:
+            </div>
+            <div id="long">
+                
+            </div>
+            <div>
+                Fecha:
+            </div>
+            <div id="date">
+                
+            </div>
+            <div>
+                Hora:
+            </div>
+            <div id="time">
+            </div>
+        </section>
+        <section class="byplace"></section>
+    </section>
+
+    
+    <section>
+        <input id="slider" type="range" min="0" step="1">
+        <id id="mapa"></id>
+    </section>
+    
+    
+
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <script src="/scripts/scripts.js"type="module"></script>
+
+</body>
+</html>

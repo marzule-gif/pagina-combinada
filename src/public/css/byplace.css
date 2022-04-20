@@ -1,0 +1,48 @@
+.byplace {
+    min-width: 250px;
+    height: 120px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.place-item {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+}
+
+.index {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-item-content {
+    padding: 5px;
+}
+
+.place-item-coords {
+    font-weight: 600;
+    border-bottom: 2px solid gray;
+    white-space: nowrap;
+}
+
+.place-item-time {
+    font-style: italic;
+}

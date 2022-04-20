@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+#datos{
+    padding: 0px 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mapa{
+    position: absolute;
+    height: 62%;
+    width: 98%;
+    bottom: 0%;
+    margin: 1%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    background: white;
+    margin: 2%;
+    margin-left: 50px;
+    border: black solid 2px;
+}
+.grid div{
+    text-align: center;
+    border: black solid 1px;
+}
+
+#fechas{
+    float: right;
+    top: 0%;
+    background-color: orangered;
+    width: 360px;
+    height: 100px;
+    margin: 2px;
+    margin-right: 10%;
+    text-align: center;
+    color: white;
+    border: #fff solid 2px;
+    
+
+}
+
+#title{
+    text-align: center;
+    border: #fff solid 2px;
+    float: center;
+    color: #fff;
+    background-color: orangered;
+    
+}
+
+#button{
+    text-align: center;
+    width: 290px;
+}
+
+#slider{
+    position: absolute;
+    z-index: 9999;
+    left: 5rem;
+    top: 14rem
+}
+
+@media screen and (max-width:600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 45%;
+        background: white;
+        margin: 2%;
+        margin-left: 10px;
+        border: black solid 2px;
+    }
+
+    #fechas{
+        float: right;
+        top: 0%;
+        background-color: orangered;
+        width: 100px;
+        height: 80px;
+        margin: 2px;
+        margin-right: 20%;
+        text-align: center;
+        color: white;
+        border: #fff solid 2px;
+
+    }
+
+    #button{
+        text-align: center;
+        width: 160px;
+    }
+    
+    #mapa{
+        position: absolute;
+        height: 60%;
+        width: 98%;
+        bottom: 0%;
+        margin: 1%;
+     
+    }
+
+    #start{
+        width: 154px;
+    }
+
+    #stop{
+        width: 154px;
+    }
+    #slider{
+        position: absolute;
+        z-index: 9999;
+        left: 4rem;
+        top: 17rem
+    }
+}
